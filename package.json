@@ -1,5 +1,5 @@
 {
-  "name": "winfo",
+  "name": "express",
   "version": "1.0.0",
   "description": "UW Winfo 2024 Hackathon",
   "main": "index.js",
@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "axios": "^1.6.7",
+    "express": "^4.18.2",
+    "openai": "^4.26.0"
   }
 }
