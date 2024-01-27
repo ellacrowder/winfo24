@@ -64,11 +64,12 @@ async function callOpenAIChatGPT(prompt) {
 }
 
 callOpenAIChatGPT(prompt);
-*/
+
 
 app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
+*/
 
 const PORT = process.env.PORT || 5300;
 app.listen(PORT, () => {
