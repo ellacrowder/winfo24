@@ -1,17 +1,22 @@
 'use strict';
 
 (function () {
-  // MODULE GLOBAL VARIABLES, CONSTANTS, AND HELPER FUNCTIONS CAN BE PLACED HERE
+  const express = require('express');
+  const bodyParser = require('body-parser');
+  const axios = require('axios');
+
+  const app = express();
+  app.use(bodyParser.json());
+
+  const apiKey = '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';
 
   window.addEventListener('load', init);
 
   function init() {
-    // THIS IS THE CODE THAT WILL BE EXECUTED ONCE THE WEBPAGE LOADS
+    sendPrompt;
   }
 
-  function exampleFunction1() {
-    /* SOME CODE */
-  }
+  function sendPrompt() {}
 
   function exampleFunction2(someVariable) {
     /* SOME CODE */
