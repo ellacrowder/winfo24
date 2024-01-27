@@ -1,2 +1,2 @@
-# winfo24
+# Winfo24
 UW Winfo 2024 Hackathon
