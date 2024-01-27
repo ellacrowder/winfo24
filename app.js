@@ -1,7 +1,8 @@
+'use strict';
+
 const express = require('express');
 const app = express();
 const axios = require('axios');
-
 const apiKey = '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';
 
 const prompt =
