@@ -30,30 +30,29 @@
     <label> <input type="checkbox" id="value8" />Teamwork</label>
     <label> <input type="checkbox" id="value9" />Perserverance</label>
     <label> <input type="checkbox" id="value10" />Honesty</label>
-    <button class="getPrompt">Get Prompt</button>
+    <button id="getPrompt">Get Prompt</button>
 
     <script>
       const getPromptButton = document.getElementById('getPrompt');
       getPromptButton.addEventListener('click', getPrompt);
 
       async function getPrompt() {
-        let res = await fetch('http://localhost:5000/chat',
-        {
-            method: 'POST',
-            headers: {
-            "Content-Type": 'application/json'
-            },
-            body: JSON.stringify({
-            question: 'Create a story prompt for a parent telling a 0-3 year old child a story about space, curiosity, and kindness. In your response, give a title, and only provide 6 bullet points. Each bullet point should be one very simple sentence without extra adjectives. The first 3 are under “Plot”. The first point is the beginning of the story, the second is the middle, and the third is the end. The next 3 are under “Characters”. Each different character in the story should all be planets.';
-            })
-        })
+        let res = await fetch('http://localhost:5000/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            question:
+              'Create a story prompt for a parent telling a 0-3 year old child a story about space, curiosity, and kindness. In your response, give a title, and only provide 6 bullet points. Each bullet point should be one very simple sentence without extra adjectives. The first 3 are under “Plot”. The first point is the beginning of the story, the second is the middle, and the third is the end. The next 3 are under “Characters”. Each different character in the story should all be planets.',
+          }),
+        });
 
-        const data = await res.json()
+        const data = await res.json();
       }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/openai"></script>
     <script src="https://cdn.jsdelivr.net/npm/dotenv"></script>
-    <script src="index.js"></script>
   </body>
 </html>
