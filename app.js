@@ -20,7 +20,7 @@ app.post('/chat', async (req, res) => {
   }
 });
 
-const num = 8000;
+const num = 5000;
 const PORT = process.env.PORT || num;
 
 app.listen(PORT, () => {
