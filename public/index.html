@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+  </head>
+  <body>
+    <h1 id="age">StellarTales</h1>
+    <select id="grade" class="ui dropdown">
+      <option value="" selected disabled>Age Range</option>
+      <option value="1">0-3</option>
+      <option value="2">3-5</option>
+      <option value="3">5-8</option>
+    </select>
+    <select id="topic" class="ui dropdown">
+      <option value="" selected disabled>Science Topic</option>
+      <option value="1">Moons</option>
+      <option value="2">Planets</option>
+      <option value="3">Suns</option>
+    </select>
+    <label> <input type="checkbox" id="value1" />Kindness</label>
+    <label> <input type="checkbox" id="value2" />Generosity</label>
+    <label> <input type="checkbox" id="value3" />Respect</label>
+    <label> <input type="checkbox" id="value4" />Empathy</label>
+    <label> <input type="checkbox" id="value5" />Gratitude</label>
+    <label> <input type="checkbox" id="value6" />Responsibility</label>
+    <label> <input type="checkbox" id="value7" />Patience</label>
+    <label> <input type="checkbox" id="value8" />Teamwork</label>
+    <label> <input type="checkbox" id="value9" />Perserverance</label>
+    <label> <input type="checkbox" id="value10" />Honesty</label>
+    <button class="getPrompt">Get Prompt</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/openai"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

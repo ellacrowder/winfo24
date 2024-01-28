@@ -1,0 +1,17 @@
+{
+  "name": "winfo",
+  "version": "1.0.0",
+  "description": "UW Winfo 2024 Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "openai": "^4.26.0"
+  }
+}
