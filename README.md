@@ -1,2 +1,3 @@
-# Winfo24
-UW Winfo 2024 Hackathon
+# StellarTales
+This is the Github for Team 56 in the UW Winfo 2024 Hackathon. Our project is an app that uses ChatGPT API to generate bedtime storytime prompts for parents. The bolded parts of the following prompt changes based on user input.
+'Create a story prompt for a parent telling a **0-3** year old child a story about space, **curiosity, and kindness**. In your response, give a title, and only provide 6 bullet points. Each bullet point should be one very simple sentence without extra adjectives. The first 3 are under “Plot”. The first point is the beginning of the story, the second is the middle, and the third is the end. The next 3 are under “Characters”. Each different characters in the story that should all be **planets**.'
