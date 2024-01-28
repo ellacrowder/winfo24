@@ -1,31 +1,5 @@
 'use strict';
-'use require';
 
-const { Configuration, OpenAIApi } = require('openai');
-require('dotenv').config();
-
-async function getPrompt() {
-  const newConfig = new Configuration({
-    apiKey: process.env.OPENAI_SECRET_KEY,
-  });
-  const openai = new OpenAIApi(newConfig);
-
-  const GPTOutput = await openai.createChatCompletion({
-    model: 'gpt-3.5-turbo',
-    messages: [
-      {
-        role: 'user',
-        content:
-          'Create a story prompt for a parent telling a 0-3 year old child a story about space, curiosity, and kindness. In your response, give a title, and only provide 6 bullet points. Each bullet point should be one very simple sentence without extra adjectives. The first 3 are under “Plot”. The first point is the beginning of the story, the second is the middle, and the third is the end. The next 3 are under “Characters”. Each different character in the story should all be planets.',
-      },
-    ],
-  });
-
-  const output_text = GPTOutput.data.choices[0].message.content;
-  console.log(output_text);
-}
-
-getPrompt();
 /*
 (function () {
   const openai = new OpenAI({
